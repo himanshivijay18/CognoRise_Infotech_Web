@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --underweight : orange;
+    --normal : green;
+    --overweight: lightcoral;
+    --obese : crimson;
+}
+*{
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #9765e7;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    width: 90%;
+    max-width: 420px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 150x rgba(0, 0, 0, 0.25);
+    display: grid;
+    gap: 1rem;
+}
+
+.calculator{
+    display: grid;
+    gap : 1rem;
+}
+
+.calculator div{
+    display: flex;
+    align-items: center;
+    gap : 1rem;
+}
+
+.calculator label{
+    flex: 0 1 120px;
+    font-weight: 600;
+}
+
+.calculator input{
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    outline-color: #555;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.calculator button{
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #752fb6;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing:1px ;
+}
+
+.calculator button[type = "reset"]{
+background-color: #444;
+}
+
+.calculator button:hover{
+filter: brightness(120%);
+}
+
+.output{
+    text-align : center;
+}
+
+.output #bmi{
+font-size: 4rem;
+}
+
+.output #desc strong{
+    text-transform: uppercase;
+}
+
+.bmi-scale{
+    display : flex;
+}
+
+.bmi-scale div{
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 5px solid var(--color);
+    padding: 10px;
+}
+
+.bmi-scale h4{
+    font-size: 0.75rem;
+    color: slategray;
+
+}
+
+.underweight {
+    color: var(--underweight);
+  }
+  
+  .healthy {
+    color: var(--normal);
+  }
+  
+  .overweight {
+    color: var(--overweight);
+  }
+  
+  .obese {
+    color: var(--obese);
+  }
